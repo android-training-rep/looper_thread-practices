@@ -7,6 +7,20 @@
     android:gravity="center"
     tools:context=".HandlerActivity">
     <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end"
+        android:textAllCaps="false"
+        />
+    <Button
         android:id="@+id/btn_task_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

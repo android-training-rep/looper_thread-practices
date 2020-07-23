@@ -3,4 +3,6 @@
     <string name="to_handler">To Handler</string>
     <string name="task_a">Task A</string>
     <string name="task_b">Task B</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
 </resources>
