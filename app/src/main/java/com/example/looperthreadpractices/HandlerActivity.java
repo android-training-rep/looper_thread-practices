@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class HandlerActivity extends AppCompatActivity {
 
-    LooperThread looperThread = new LooperThread();
+    LooperThread looperThread = new LooperThread(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,13 +57,13 @@ public class HandlerActivity extends AppCompatActivity {
 
     private void taskB() {
         Message msg = Message.obtain();
-        msg.what = 2;
+        msg.what = FinalFields.TASK_B;
         looperThread.handler.sendMessage(msg);
     }
 
     private void taskA() {
         Message msg = Message.obtain();
-        msg.what = 1;
+        msg.what = FinalFields.TASK_A;
         looperThread.handler.sendMessage(msg);
     }
 }
